@@ -1,0 +1,20 @@
+{
+  "name": "lefuturiste/google-photos-album-crawler",
+  "description": "Google Photos public album crawler/fetcher",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lefuturiste",
+      "email": "contact@lefuturiste.fr"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lefuturiste\\GooglePhotosAlbumCrawler\\": "src"
+    }
+  }
+}
