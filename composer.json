@@ -1,6 +1,15 @@
 {
   "name": "lefuturiste/google-photos-album-crawler",
   "description": "Google Photos public album crawler/fetcher",
+  "keywords": [
+    "google",
+    "photos",
+    "album",
+    "public",
+    "crawler",
+    "scrapper",
+    "images"
+  ],
   "type": "library",
   "license": "MIT",
   "authors": [
