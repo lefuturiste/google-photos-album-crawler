@@ -1,3 +1,27 @@
+<p align="center">
+    <img
+        alt="Google photos logo" 
+        src="https://i.imgur.com/z3wkiiQ.png"
+        width="100" />
+</p>
+<p align="center">
+    <a href="https://packagist.org/packages/lefuturiste/google-photos-album-crawler">
+        <img
+            alt="Latest Stable Version"
+            src="https://poser.pugx.org/lefuturiste/google-photos-album-crawler/v/stable" />
+    </a>
+    <a href="https://packagist.org/packages/lefuturiste/google-photos-album-crawler">
+        <img
+            alt="Total Downloads"
+            src="https://poser.pugx.org/lefuturiste/google-photos-album-crawler/downloads" />
+    </a>
+    <a href="https://packagist.org/packages/lefuturiste/google-photos-album-crawler">
+        <img
+            alt="License"
+            src="https://poser.pugx.org/lefuturiste/google-photos-album-crawler/license" />
+    </a>
+</p>
+
 # PHP Google photos album crawler
 
 Just a little and light script to fetch an album name, images from a public google photos album url. This simple script will simply use guzzle to get the html of the page, apply a regex to get the JSON data, then parse it. For big album it might take a little bit of time so be patient and make sure to not block the main thread of your application. You can for example use this script in a async task or a job queue.
