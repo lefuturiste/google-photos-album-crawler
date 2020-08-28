@@ -49,7 +49,7 @@ class Crawler {
         $html = $response->getBody()->getContents();
         $re = '/<script nonce="[^"]+">AF_initDataCallback\(\{[^<]+, data:([^<]+)\}\);<\/script>/m';
         preg_match_all($re, $html, $matches, PREG_SET_ORDER, 0);
-        $json = $matches[0][1];
+        $json = str_replace(', sideChannel: {}', '', $matches[0][1]);
         $data = json_decode($json, true);
         $images = array_map(function ($image) {
             // . '=w4032-h2268-no'
