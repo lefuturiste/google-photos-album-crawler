@@ -45,7 +45,11 @@ class Crawler {
      */
     public function getAlbum($url)
     {
-        $response = $this->client->get($url);
+        $response = $this->client->get($url, ['http_errors' => false]);
+        if ($response->getStatusCode() !== 200)
+        {
+          return false;
+        }        
         $html = $response->getBody()->getContents();
         $re = '/<script nonce="[^"]+">AF_initDataCallback\(\{[^<]+, data:([^<]+)\}\);<\/script>/m';
         preg_match_all($re, $html, $matches, PREG_SET_ORDER, 0);
