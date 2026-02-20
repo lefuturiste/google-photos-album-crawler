@@ -80,5 +80,4 @@ Any issues of suggetion, this is a open source project so you can use github Iss
 Also feel free to contact me if you want a quick answer because I don't notice the github notifications... 
 
 - Email: [contact@lefuturiste.fr](mailto:contact@lefuturiste.fr) 
-- Mastodon: [lefuturiste@mstdn.io](https://mstdn.io/@lefuturiste)
-- Discord: `lefuturiste#5297`
+
